@@ -1,0 +1,71 @@
+site_name: Mi manual de desarrollo
+site_description: Documentación técnica y procedimientos para desarrolladores
+site_author: Mayrene Mora
+
+theme:
+  name: material
+  language: es
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - attr_list
+
+nav:
+  - Inicio: index.md
+
+  - 💻 Preparación del ambiente:
+      # - Visual Studio: ambiente/visual-studio.md
+      - Configuración inicial: ambiente/configuracion.md
+
+  - 🧑‍💻 Desarrollo:
+      - Desarrollo: desarrollo/desarrollo.md
+      - FTU: desarrollo/ftu.md
+      - Pivote:  desarrollo/remoto.md
+
+  - 🚀 Catalogaciones:
+      - Procedimiento general: catalogacion/procedimientos.md      
+      - IIS: catalogacion/iis.md
+      - Doc Oficial: catalogacion/doc-oficial.md
+
+  - 🗄️ Base de datos:
+      - Conexiónes: base-datos/conexiones.md
+      - Packages: base-datos/packages.md
+      - Consultas útiles: base-datos/consultas.md
+
+  # - 🐛 Problemas frecuentes:
+  #     - .NET: problemas/dotnet.md
+  #     - Oracle: problemas/oracle.md
+  #     - NuGet: problemas/nuget.md
+  #     - IIS: problemas/iis.md
+
+  - 🌍 URLS de ambientes: varios/url-ambientes.md
+  - ⏱️ Registro de horas: varios/registro-horas.md
+  - ❓ Problemas frecuentes: varios/problemas-frecuentes.md
+     
